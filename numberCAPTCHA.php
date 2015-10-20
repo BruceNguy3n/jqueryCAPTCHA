@@ -128,7 +128,7 @@
 							for($i = 0; $i < 5; $i++)
 							{
 								$pos = ($shuffedNumber[$i] * 26 * -1);
-								echo($pos);
+								echo($shuffedNumber[$i]);
 						?>
 								<div data-value="<?php echo $shuffedNumber[$i]; ?>" class="bgNumber" style="background-position:0px <?php echo $pos; ?>px;"></div>
 						<?php
