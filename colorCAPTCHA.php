@@ -34,7 +34,6 @@ $randomKey = array_rand($arrayColors);
 $randomColor = $arrColors[$randomKey];
 $_SESSION['randomColor'] = $randomColor;
 ?>
-
 <html>
 	<head>
 		<meta charset="utf-8" />
