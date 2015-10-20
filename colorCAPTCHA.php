@@ -127,7 +127,7 @@ $_SESSION['randomColor'] = $randomColor;
 			</div>
 
 			<div class="row">
-				<strong>Solve the CAPTCHA by dragging the <strong><u><?php echo stroupper($randomColor); ?></u></strong> colored box above.</strong>
+				<strong>Solve the CAPTCHA by dragging the <strong><u><?php echo strtoupper($randomColor); ?></u></strong> colored box above.</strong>
 			</div>
 			<div class="row">
 				<input type="hidden" name="selectedColor" id="selectedColor" />
