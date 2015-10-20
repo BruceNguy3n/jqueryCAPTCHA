@@ -136,11 +136,11 @@ $_SESSION['randomColor'] = $randomColor;
 		</form>
 
 		<script src="js/jquery-1.10.2.js"></script>
-		<script scr="js/jquery-ui-1.10.4.custom.min.js"></script>
+		<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
 		<script>
 			$(document).ready(function()
 			{
-				/*$('button').button();*/
+				$('button').button();
 
 				$('.colorTile').draggable
 				({
