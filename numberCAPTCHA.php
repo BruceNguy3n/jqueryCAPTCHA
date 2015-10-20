@@ -29,7 +29,7 @@
 <?php
 		}
 	}
-	
+
 	$randomNumber = (string)rand(10000, 99999);
 	$_SESSION['CAPTCHAValue'] = $randomNumber;
 ?>
@@ -126,7 +126,7 @@
 						<?php
 							for($i = 0; $i < 5; $i++)
 							{
-								$pos = $shuffedNumber[i] * 26 * -1;
+								$pos = $shuffedNumber[$i] * 26 * -1;
 						?>
 								<div data-value="<?php echo $shuffedNumber[$i]; ?>" class="bgNumber" style="background-position:0px <?php echo $pos; ?>px;"></div>
 						<?php
