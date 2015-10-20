@@ -97,7 +97,7 @@
 			<div class="row">
 				<label>CAPTCHA Number: </label>
 				<?php
-					$arrayNumbers = array();
+					/*$arrayNumbers = array();*/
 					for($i = 0; $i < 5; $i++)
 					{
 						$pos = ($randomNumber[$i] * 26 * -1);
@@ -120,13 +120,14 @@
 			<div class="row">
 				<?php
 					$shuffledNumber = str_shuffle($randomNumber);
+					echo($shuffledNumber);
 				?>
 					<label>Drag to reorder: </label>
 					<div id="captchaTiles">
 						<?php
 							for($i = 0; $i < 5; $i++)
 							{
-								$pos = $shuffedNumber[$i] * 26 * -1;
+								$pos = ($shuffedNumber[$i] * 26 * -1);
 						?>
 								<div data-value="<?php echo $shuffedNumber[$i]; ?>" class="bgNumber" style="background-position:0px <?php echo $pos; ?>px;"></div>
 						<?php
