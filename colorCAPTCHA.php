@@ -139,8 +139,8 @@ $_SESSION['randomColor'] = $randomColor;
 		<script scr="js/jquery-ui-1.10.4.custom.min.js"></script>
 		<script>
 			//javascript goes here
-			/*$(document).ready(function()
-			{*/
+			$(document).ready(function()
+			{
 				$('button').button();
 
 				$('.colorTile').draggable
@@ -183,7 +183,7 @@ $_SESSION['randomColor'] = $randomColor;
 					var x = $('.dropbox .colorTile').data('key');
 					$('#selectedColor').val(x);
 				});
-			/*});*/
+			});
 		</script>
 	</body>
 </html>
