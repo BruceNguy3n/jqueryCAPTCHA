@@ -97,7 +97,7 @@
 			<div class="row">
 				<label>CAPTCHA Number: </label>
 				<?php
-					/*$arrayNumbers = array();*/
+					$arrayNumbers = array();
 					for($i = 0; $i < 5; $i++)
 					{
 						$pos = ($randomNumber[$i] * 26 * -1);
@@ -125,8 +125,7 @@
 							
 							for($i = 0; $i < 5; $i++)
 							{
-								$num = (int)$shuffledNumber[i];
-								$pos = ($num * 26 * -1);
+								$pos = ($shuffedNumber[$i] * 26 * -1);
 								echo '<div data-value="'.$shuffledNumber[$i].'" class="bgNumber" style="background-position:0 '.$pos.'px;"></div>';
 							}
 						?>
