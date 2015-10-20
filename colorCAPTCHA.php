@@ -115,7 +115,7 @@ $_SESSION['randomColor'] = $randomColor;
 						{
 					?>
 							<div class="colorTile" style="background-color:<?php echo $color;?>;"
-								data-key="<?php echo $color;?>;"></div>
+								data-key="<?php echo $color;?>"></div>
 					<?php
 						}
 					?>
