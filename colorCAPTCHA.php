@@ -140,47 +140,50 @@ $_SESSION['randomColor'] = $randomColor;
 	<script scr="js/jquery-ui-1.10.4.custom.min.js"></script>
 	<script>
 		//javascript goes here
-		$('button').button();
-
-		$('.colorTile').draggable
-		({
-			revert: 'invalid',
-			helper: 'clone',
-			cursor: 'move'
-		});
-
-		$('.dropbox').droppable
-		({
-			accept: function(item)
-			{
-				if(item.hasClass('colorTile') && !$('.dropbox .colorTile').length)
-				{
-					return true;
-				}
-				return false;
-			},
-			activeClass: 'ui-state-hightlight',
-			drop: function(event, ui)
-			{
-				var $item = (ui.draggable);
-				$item.css({'left' : 0, 'top' : 0}).appendTo('.dropbox');
-			}
-		});
-
-		$('.colors').droppable
-		({
-			accept: '.colorTile',
-			drop: function(event, ui)
-			{
-				var $item = (ui.draggable);
-				$item.css({'left' : 0, 'top': 0}).appendTo('.colors');
-			}
-		});
-
-		$('#frmCaptcha').submit(function()
+		$(document).ready(function()
 		{
-			var x = $('.dropbox .colorTile').data('key');
-			$('#selectedColor').val(x);
+			$('button').button();
+
+			$('.colorTile').draggable
+			({
+				revert: 'invalid',
+				helper: 'clone',
+				cursor: 'move'
+			});
+
+			$('.dropbox').droppable
+			({
+				accept: function(item)
+				{
+					if(item.hasClass('colorTile') && !$('.dropbox .colorTile').length)
+					{
+						return true;
+					}
+					return false;
+				},
+				activeClass: 'ui-state-hightlight',
+				drop: function(event, ui)
+				{
+					var $item = (ui.draggable);
+					$item.css({'left' : 0, 'top' : 0}).appendTo('.dropbox');
+				}
+			});
+
+			$('.colors').droppable
+			({
+				accept: '.colorTile',
+				drop: function(event, ui)
+				{
+					var $item = (ui.draggable);
+					$item.css({'left' : 0, 'top': 0}).appendTo('.colors');
+				}
+			});
+
+			$('#frmCaptcha').submit(function()
+			{
+				var x = $('.dropbox .colorTile').data('key');
+				$('#selectedColor').val(x);
+			});
 		});
 	</script>
 </html>
