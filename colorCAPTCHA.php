@@ -30,8 +30,8 @@ if(isset($_POST['submit']))
 	}
 }
 
-$arrayColors = array('red', 'green', 'blue', 'white', 'black');
-$randomKey = array_rand($arrayColors);
+$arrColors = array('red', 'green', 'blue', 'white', 'black');
+$randomKey = array_rand($arrColors);
 $randomColor = $arrColors[$randomKey];
 $_SESSION['randomColor'] = $randomColor;
 
