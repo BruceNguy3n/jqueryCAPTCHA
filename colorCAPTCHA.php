@@ -138,7 +138,6 @@ $_SESSION['randomColor'] = $randomColor;
 		<script src="js/jquery-1.10.2.js"></script>
 		<script scr="js/jquery-ui-1.10.4.custom.min.js"></script>
 		<script>
-			//javascript goes here
 			$(document).ready(function()
 			{
 				$('button').button();
