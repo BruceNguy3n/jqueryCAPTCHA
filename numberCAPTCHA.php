@@ -122,10 +122,11 @@
 					<div id="captchaTiles">
 						<?php
 							$shuffledNumber = str_shuffle($randomNumber);
-							echo($shuffledNumber[0]);
+							
 							for($i = 0; $i < 5; $i++)
 							{
-								$pos = ($shuffedNumber[$i] * 26 * -1);
+								$num = (int)$shuffledNumber[i];
+								$pos = ($num * 26 * -1);
 								echo '<div data-value="'.$shuffledNumber[$i].'" class="bgNumber" style="background-position:0 '.$pos.'px;"></div>';
 							}
 						?>
