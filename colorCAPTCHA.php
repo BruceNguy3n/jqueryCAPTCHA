@@ -114,8 +114,7 @@ $_SESSION['randomColor'] = $randomColor;
 						foreach($arrColors as $color)
 						{
 					?>
-							<div class="colorTile" style="background-color:<?php echo $color;?>;"
-								data-key="<?php echo $color;?>"></div>
+							<div class="colorTile" style="background-color:<?php echo $color;?>;" data-key="<?php echo $color;?>"></div>
 					<?php
 						}
 					?>
@@ -127,7 +126,7 @@ $_SESSION['randomColor'] = $randomColor;
 			</div>
 
 			<div class="row">
-				<strong>Solve the CAPTCHA by dragging the <strong><u><?php echo strtoupper($randomColor); ?></u></strong> colored box above.</strong>
+				<strong>Solve the CAPTCHA by dragging the <strong><u><?php echo strtoupper($randomColor);?></u></strong> colored box above.</strong>
 			</div>
 			<div class="row">
 				<input type="hidden" name="selectedColor" id="selectedColor" />
