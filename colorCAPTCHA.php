@@ -140,7 +140,7 @@ $_SESSION['randomColor'] = $randomColor;
 		<script>
 			$(document).ready(function()
 			{
-				$('button').button();
+				/*$('button').button();*/
 
 				$('.colorTile').draggable
 				({
