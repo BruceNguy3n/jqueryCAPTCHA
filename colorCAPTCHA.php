@@ -29,6 +29,7 @@ if(isset($_POST['submit']))
 <?php
 	}
 }
+
 $arrayColors = array('red', 'green', 'blue', 'white', 'black');
 $randomKey = array_rand($arrayColors);
 $randomColor = $arrColors[$randomKey];
@@ -40,70 +41,70 @@ $_SESSION['randomColor'] = $randomColor;
 		<meta charset="utf-8" />
 		<title>Color Captcha</title>
 		<link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.10.4.custom.min.css" />
+		<style type="text/css">
+			body
+			{
+				font-family: arial, verdana;
+				font-size: 12px;
+				margin: 0px auto;
+				width: 700px;
+			}
+			#frmCaptcha
+			{
+				border: 1px solid #aaa;
+				float: left;
+				margin: 0 auto;
+				padding: 20px;
+				width: 100%;
+			}
+			h3
+			{
+				border-bottom: 1px solid #aaa;
+			}
+			.row
+			{
+				display: block;
+				padding: 20px 10px;
+				clear: left;
+				float: left;
+			}
+			.colors
+			{
+				float: left;
+				border: 1px solid #aaa;
+				padding: 20px 10px;
+			}
+			.colorTile
+			{
+				border: 1px solid #000;
+				margin: 0 5px;
+				display: block;
+				float: left;
+				height: 40px;
+				width: 40px;
+				z-index: 1;
+			}
+			.row label
+			{
+				float: left;
+				padding: 0px 10px;
+				width: 25px;
+				text-align: center;
+			}
+			.dropbox
+			{
+				border: 1px solid #aaa;
+				float: left;
+				height: 82px;
+				width: 100px;
+				z-index: 0;
+			}
+			.clear
+			{
+				clear: both;
+			}
+		</style>
 	</head>
-	<style type="text/css">
-		body
-		{
-			font-family: arial, verdana;
-			font-size: 12px;
-			margin: 0px auto;
-			width: 700px;
-		}
-		#frmCaptcha
-		{
-			border: 1px solid #aaa;
-			float: left;
-			margin: 0 auto;
-			padding: 20px;
-			width: 100%;
-		}
-		h3
-		{
-			border-bottom: 1px solid #aaa;
-		}
-		.row
-		{
-			display: block;
-			padding: 20px 10px;
-			clear: left;
-			float: left;
-		}
-		.colors
-		{
-			float: left;
-			border: 1px solid #aaa;
-			padding: 20px 10px;
-		}
-		.colorTile
-		{
-			border: 1px solid #000;
-			margin: 0 5px;
-			display: block;
-			float: left;
-			height: 40px;
-			width: 40px;
-			z-index: 1;
-		}
-		.row label
-		{
-			float: left;
-			padding: 0px 10px;
-			width: 25px;
-			text-align: center;
-		}
-		.dropbox
-		{
-			border: 1px solid #aaa;
-			float: left;
-			height: 82px;
-			width: 100px;
-			z-index: 0;
-		}
-		.clear
-		{
-			clear: both;
-		}
-	</style>
 	<body>
 		<form id="frmCaptcha" method="post">
 			<h3>Color CAPTCHA</h3>
